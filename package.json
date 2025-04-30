@@ -2,6 +2,11 @@
   "name": "blockchain",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun run index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --watchAll"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -9,6 +14,12 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "nodemon": "^3.1.10"
+    "@types/express": "^5.0.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "ws": "^8.18.1"
   }
 }
